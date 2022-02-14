@@ -1,0 +1,8 @@
+.moto-widget {
+    position: relative;
+}
+
+.moto-widget-image {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}

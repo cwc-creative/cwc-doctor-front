@@ -1,0 +1,19 @@
+.moto-widget {
+    position: relative;
+}
+
+.moto-spacing-top-auto {
+    padding-top: initial;
+}
+
+.moto-spacing-right-auto {
+    padding-right: initial;
+}
+
+.moto-spacing-bottom-auto {
+    padding-bottom: initial;
+}
+
+.moto-spacing-left-auto {
+    padding-left: initial;
+}
