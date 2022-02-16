@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const WidgetCallback = () => {
+
+  const [open, setOpen] = useState(false);
+  const [moreDetails, setMoreDetails] = useState(false);
+
   return <div
       data-moto-widget-callback=""
-      className="moto-widget-callback moto-widget-callback_closed moto-preset-default"
+      className={`moto-widget-callback moto-preset-default ${open ? 'moto-widget-callback_opened' : 'moto-widget-callback_closed'}`}
     >
       <div className="moto-widget-callback__wrapper">
         <div
           className="moto-widget-callback__open-button moto-widget-callback__thumbnail-wrapper moto-widget-callback__thumbnail-wrapper_icon"
-        >
+          style={{ display: open && 'none' }}
+         onClick={() => setOpen(!open)}>
           <div
             className="moto-widget-callback__overlay moto-widget-callback__overlay_open-button"
           ></div>
@@ -17,8 +22,8 @@ const WidgetCallback = () => {
           ></div>
         </div>
         <div
-          className="moto-widget-callback__body moto-widget-callback__body_more-details-enabled"
-          style={{ display: 'none' }}
+          className={`moto-widget-callback__body moto-widget-callback__body_more-details-enabled ${moreDetails && 'moto-widget-callback__body_more-details-opened'}`}
+          style={ open ? { width: '280px' } : {display: 'none'} }
         >
           <div
             className="moto-widget-callback__agent moto-widget-callback__thumbnail-wrapper moto-widget-callback__thumbnail-wrapper_icon"
@@ -29,18 +34,18 @@ const WidgetCallback = () => {
           </div>
           <div className="moto-widget-callback__description moto-widget-text">
             <p className="moto-text_system_8" style={{ textAlign: 'center' }}>
-              John Smith
+              Dr Hervé
             </p>
             <p className="moto-text_system_10" style={{ textAlign: 'center' }}>
-              <span className="moto-color2_3">agent</span>
+              <span className="moto-color2_3">Médecin Généraliste Diplômé</span>
             </p>
             <p className="moto-text_normal" style={{ textAlign: 'center' }}>
-              <a className="moto-link" data-action="call" href="tel:+112233445566"
-                ><span className="fa"></span> +112233445566</a
+              <a className="moto-link" data-action="call" href="tel:+261 34 01 322 13"
+                ><span className="fa"></span> +261 34 01 322 13</a
               >
             </p>
           </div>
-          <div className="moto-widget-callback__more-details-wrapper">
+          <div className="moto-widget-callback__more-details-wrapper" style={{ display: moreDetails && 'block' }}>
             <hr className="moto-widget-callback__more-details-divider" />
             <div className="moto-widget-callback__more-details">
               <div className="moto-widget-callback__more-details-item">
@@ -92,9 +97,10 @@ const WidgetCallback = () => {
           <div className="moto-widget-callback__more-details-button-wrapper">
             <i
               className="moto-widget-callback__more-details-button fa fa-angle-down"
+              onClick={() => setMoreDetails(!moreDetails)}
             ></i>
           </div>
-          <div className="moto-widget-callback__close-button">×</div>
+          <div className="moto-widget-callback__close-button" onClick={() => setOpen(false)}>×</div>
         </div>
       </div>
     </div>;
