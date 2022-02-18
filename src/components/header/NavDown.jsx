@@ -108,49 +108,16 @@ const NavDown = () => {
                                 <WidgetMenuList>
 
                                     <WidgetMenuItem>
+                                        <WidgetMenuLink href="#" linkLevel={1} linkText="ACCUEIL" />
+                                    </WidgetMenuItem>
+
+                                    <WidgetMenuItem>
+                                        <WidgetMenuLink href="#services" linkLevel={1} linkText="SERVICES" />
+                                    </WidgetMenuItem>
+
+                                    <WidgetMenuItem>
                                         <WidgetMenuLink href="#about" linkLevel={1} linkText="A PROPOS" />
-                                    </WidgetMenuItem>
-
-                                    <WidgetMenuItem>
-                                        <WidgetMenuLink href="#pricing" linkLevel={1} linkText="TARIFS" />
-                                    </WidgetMenuItem>
-
-                                    <WidgetMenuItem>
-                                        <WidgetMenuLink href="#contacts" linkLevel={1} linkText="CONTACTS" />
-                                    </WidgetMenuItem>
-
-                                    <WidgetMenuItem hasSubmenu={true}>
-                                        <WidgetMenuLink href="#" linkLevel={1} linkText="MENU" linkSubmenu={true} />
-                                        <WidgetMenuSubList>
-                                            <WidgetMenuItem>
-                                                <WidgetMenuLink href="#about" linkLevel={2} linkText="A propos" />
-                                            </WidgetMenuItem>
-                                            <WidgetMenuItem>
-                                                <WidgetMenuLink href="#benefits" linkLevel={2} linkText="Bénéfices" />
-                                            </WidgetMenuItem>
-                                            <WidgetMenuItem>
-                                                <WidgetMenuLink href="#team" linkLevel={2} linkText="Equipe" />
-                                            </WidgetMenuItem>
-                                            <WidgetMenuItem>
-                                                <WidgetMenuLink href="#services" linkLevel={2} linkText="Services" />
-                                            </WidgetMenuItem>
-                                            <WidgetMenuItem>
-                                                <WidgetMenuLink href="#Sponsors" linkLevel={2} linkText="Sponsors" />
-                                            </WidgetMenuItem>
-                                            <WidgetMenuItem>
-                                                <WidgetMenuLink href="#appointment" linkLevel={2} linkText="Rendez-vous" />
-                                            </WidgetMenuItem>
-                                            <WidgetMenuItem>
-                                                <WidgetMenuLink href="#pricing" linkLevel={2} linkText="Tarifs" />
-                                            </WidgetMenuItem>
-                                            <WidgetMenuItem>
-                                                <WidgetMenuLink href="#f.a.q" linkLevel={2} linkText="FAQs" />
-                                            </WidgetMenuItem>
-                                            <WidgetMenuItem>
-                                                <WidgetMenuLink href="#contacts" linkLevel={2} linkText="Contacts" />
-                                            </WidgetMenuItem>
-                                        </WidgetMenuSubList>
-                                    </WidgetMenuItem>
+                                    </WidgetMenuItem>                                 
 
                                 </WidgetMenuList>
                             </WidgetMenu>
@@ -161,17 +128,16 @@ const NavDown = () => {
                             dataWidgetId="wid_1561714918_ea1jc3pb7"
                         >
                             <a
-                            href="#contact"
+                            href="#appointment"
                             data-action="popup"
                             data-popup-id="7"
                             className="moto-widget-button-link moto-size-medium moto-link"
-                            ><span
-                                className="fa moto-widget-theme-icon"
-                            ></span>
-                            <span className="moto-widget-button-label"
-                                >NOUS CONTACTER</span
-                            ></a
                             >
+                                <span className="fa moto-widget-theme-icon"></span>
+                                <span className="moto-widget-button-label">
+                                    PRENDRE RENDEZ-VOUS
+                                </span>
+                            </a>
                         </WidgetButton>
                         </WidgetRowColumn>
                 </WidgetRow>
