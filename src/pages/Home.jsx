@@ -66,7 +66,7 @@ const Home = () => {
 
                             <WidgetSpacer data_widget_id="wid_1561715235_r42quivjf" top="small" bottom="small" dataSpacing="sasa" visibleOn="tablet" />
 
-                            <WidgetRow dataGridType="xs">
+                            <WidgetRow dataGridType="xs" right="large" left="large" dataSpacing="alal">
                                 <WidgetRowColumn classes="col-xs-7">
                                     <WidgetText bottom="small" dataSpacing="aasa">
                                         <p className="moto-text_system_12">
@@ -81,7 +81,7 @@ const Home = () => {
                                 <WidgetRowColumn classes="col-xs-5" />
                             </WidgetRow>
 
-                            <WidgetRow dataGridType="xs">
+                            <WidgetRow dataGridType="xs" right="large" left="large" dataSpacing="alal">
                                 <WidgetRowColumn classes="col-xs-7">
                                     <WidgetText>
                                         <p className="moto-text_system_9">
