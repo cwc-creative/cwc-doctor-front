@@ -3,7 +3,7 @@ import React from 'react';
 const MainLayout = ({ children }) => {
   return (
     <>
-      <div className="page">
+      <div className="page" style={{ position: 'relative', zIndex: 5 }}>
         <section
           id="section-content"
           className="content page-1 moto-section"

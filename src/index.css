@@ -1,4 +1,4 @@
-@import url("./assets/css/assets.css");
+@import url('./assets/css/assets.css');
 
 /* @charset "UTF-8"; */
 
@@ -452,7 +452,7 @@
   background-position: top;
   transition-duration: 0.4s;
   transition-property: background-color, border-color;
-  background-image: url('assets/images/cwc-doctor-home-header-bg.jpg');
+  background-image: url('assets/images/cwc-doctor-home-header-bg-chg.jpg');
 }
 .moto-text_201 {
   font-weight: 700;

@@ -37,7 +37,8 @@ import WidgetAccordionItem from '../components/widget-accordion-item/WidgetAccor
 import WidgetDivider from '../components/widget-divider/WidgetDivider';
 
 const Home = () => {
-  return <MainLayout>
+  return <>
+    <MainLayout>
             <WidgetBlock>
 
                 <NavUp />
@@ -85,14 +86,17 @@ const Home = () => {
                                 <WidgetRowColumn classes="col-xs-7">
                                     <WidgetText>
                                         <p className="moto-text_system_9">
-                                            Nous sommes toujours disponibles pour
-                                            nos patients ayant des problèmes
-                                            d'urgence. Vous pouvez facilement nous
-                                            joindre 24h/24 et 7j/7 via le numéro de
-                                            téléphone ci-dessous :
+                                            Vous pouvez facilement nous
+                                            joindre 24h/24 et 7j/7 via les numéros de
+                                            téléphone ci-dessous : <br />
+                                            <ul>
+                                                <li><a href="tel:+261344058940">034 40 589 40</a></li>
+                                                <li><a href="tel:+261344158941">034 41 589 41</a></li>
+                                                <li><a href="tel:+261344258942">034 42 589 42</a></li>
+                                            </ul>
                                         </p>
                                     </WidgetText>
-                                    <WidgetButton dataWidgetId="wid_1561715188_oqimtrg36" preset="2" top="medium">
+                                    {/* <WidgetButton dataWidgetId="wid_1561715188_oqimtrg36" preset="2" top="medium">
                                         <a
                                             href="/#services"
                                             data-action="page"
@@ -103,7 +107,7 @@ const Home = () => {
                                                 NOS SERVICES
                                             </span>
                                         </a>
-                                    </WidgetButton>
+                                    </WidgetButton> */}
                                 </WidgetRowColumn>
                                 <WidgetRowColumn classes="col-xs-5" />
                             </WidgetRow>            
@@ -189,11 +193,11 @@ const Home = () => {
     </WidgetBlock>
     
     <WidgetBlock top="large" bottom="medium" dataSpacing="lama">
-        <WidgetRow classes="row-fixed">
+        <WidgetRow classes="row-fixed" anchorName="services">
                 <WidgetRowColumn classes="col-sm-8">
                     <WidgetText>
                         <h2 className="moto-text_system_6">
-                            Pourquoi Nous Choisir
+                            Nos Services
                         </h2>
                     </WidgetText>
                     <WidgetImage 
@@ -232,7 +236,7 @@ const Home = () => {
                                     <WidgetRowColumn classes="col-xs-10">
                                         <WidgetText left="small" dataSpacing="aaas">
                                             <h3 className="moto-text_system_8">
-                                              Docteurs Certifiés
+                                              Consultation générale
                                             </h3>
                                             <p className="moto-text_normal">
                                               &nbsp;
@@ -270,7 +274,7 @@ const Home = () => {
                                     <WidgetRowColumn classes="col-xs-10">
                                         <WidgetText left="small" dataSpacing="aaas">
                                             <h3 className="moto-text_system_8">
-                                              Soin d'Urgence
+                                              ECG
                                             </h3>
                                             <p className="moto-text_normal">
                                               &nbsp;
@@ -312,7 +316,7 @@ const Home = () => {
                                         <WidgetRowColumn classes="col-xs-10">
                                         <WidgetText left="small" dataSpacing="aaas">
                                             <h3 className="moto-text_system_8">
-                                              Service 24h/24
+                                              Echographie
                                             </h3>
                                             <p className="moto-text_normal">
                                               &nbsp;
@@ -328,7 +332,7 @@ const Home = () => {
                                 </WidgetRow>
                             </WidgetRowColumn>
 
-                            <WidgetRowColumn classes="col-sm-6">
+                            {/* <WidgetRowColumn classes="col-sm-6">
                                 <WidgetRow classes="row-gutter-0" top="medium"
                                     dataGridType="xs"
                                     dataSpacing="maaa"
@@ -364,7 +368,7 @@ const Home = () => {
                                         </WidgetText>
                                     </WidgetRowColumn>
                                 </WidgetRow>
-                            </WidgetRowColumn>
+                            </WidgetRowColumn> */}
 
                     </WidgetRow>
 
@@ -419,7 +423,7 @@ const Home = () => {
                 </WidgetImage>
                 <WidgetRow>
 
-                        <WidgetRowColumn classes="col-sm-4" top="medium" dataSpacing="maaa">
+                        <WidgetRowColumn classes="col-sm-6" top="medium" left="large" dataSpacing="maaa">
                             <WidgetContainer containerContentId="5d19d6d17" dataBgPosition="top">
                                 <WidgetRow
                                     styles={{ backgroundImage: `url(${HomeTeamBg})`,
@@ -440,13 +444,13 @@ const Home = () => {
                                                     <WidgetSpacer data_widget_id="wid_1561974481_xsjc0h2op" top="small" bottom="small" dataSpacing="sasa" />
                                                     <WidgetText right="small" left="small" dataSpacing="asas">
                                                         <h3 className="moto-text_204">
-                                                            Dr. Andria Jonea
+                                                            Dr. Hervé
                                                         </h3>
                                                         <p
                                                             className="moto-text_normal"
                                                         >
                                                             <span className="moto-color5_5"
-                                                            >Cancer Specialist</span>
+                                                            >Médecin Généraliste</span>
                                                         </p>
                                                     </WidgetText>
                                                     <WidgetSocialLinksExtended
@@ -465,7 +469,7 @@ const Home = () => {
                             </WidgetContainer>
                         </WidgetRowColumn>
 
-                        <WidgetRowColumn classes="col-sm-4" top="medium" dataSpacing="maaa">
+                        <WidgetRowColumn classes="col-sm-6" top="medium" right="large" dataSpacing="maaa">
                             <WidgetContainer containerContentId="5d19d6d18" dataBgPosition="top">
                                 <WidgetRow
                                     styles={{ backgroundImage: `url(${HomeTeamBg})`,
@@ -476,19 +480,19 @@ const Home = () => {
                                     <WidgetRowColumn classes="col-sm-12">
                                         <WidgetRow
                                             dataBgPosition="right bottom"
-                                            styles={{ backgroundImage: `url(${HomeTeam3})`,
+                                            styles={{ backgroundImage: `url(${HomeTeam1})`,
                                             backgroundPosition: 'right bottom',
                                             backgroundRepeat: 'no-repeat',
                                             backgroundSize: 'contain' }}
-                                            dataBgImage="/src/assets/images/cwc-doctor-home-team3.png">
+                                            dataBgImage="/src/assets/images/cwc-doctor-home-team1.png">
                                                 <WidgetRowColumn classes="col-sm-12">
                                                     <WidgetSpacer data_widget_id="wid_1561974481_n1f26fa5w" top="small" bottom="small" dataSpacing="sasa"  />
                                                     <WidgetText right="small" left="small" dataSpacing="asas">
                                                         <h3 className="moto-text_204">
-                                                            Dr. Robet Samith
+                                                            Dr. Karen
                                                         </h3>
                                                         <p className="moto-text_normal">
-                                                            <span className="moto-color5_5">Heart Surgen</span>
+                                                            <span className="moto-color5_5">Médecin certifié</span>
                                                         </p>
                                                     </WidgetText>
                                                     <WidgetSocialLinksExtended id="wid_1561974481_51pfl8ehb" dataWidgetId="wid_1561974481_51pfl8ehb" align="left" top="small" right="small" left="small" />
@@ -498,9 +502,11 @@ const Home = () => {
                                     </WidgetRowColumn>
                                 </WidgetRow>
                             </WidgetContainer>
-                        </WidgetRowColumn>
+                        </WidgetRowColumn>                
 
-                        <WidgetRowColumn classes="col-sm-4" top="medium" dataSpacing="maaa">
+                </WidgetRow>
+                <WidgetRow>
+                    <WidgetRowColumn classes="col-sm-6" top="medium" left="large" dataSpacing="maaa">
                             <WidgetContainer containerContentId="5d19d6d19" dataBgPosition="top">
                                 <WidgetRow
                                     styles={{ backgroundImage: `url(${HomeTeamBg})`,
@@ -520,10 +526,10 @@ const Home = () => {
                                                     <WidgetSpacer data_widget_id="wid_1561974481_dqzejk30e" top="small" bottom="small" dataSpacing="sasa"  />
                                                     <WidgetText right="small" left="small" dataSpacing="asas">
                                                         <h3 className="moto-text_204">
-                                                            Dr. Sharon Laura
+                                                            Mme. Sharon Laura
                                                         </h3>
                                                         <p className="moto-text_normal">
-                                                            <span className="moto-color5_5">Family Physician</span>
+                                                            <span className="moto-color5_5">Infirmière</span>
                                                         </p>
                                                     </WidgetText>
                                                     <WidgetSocialLinksExtended id="wid_1561974481_k2413s8vl" dataWidgetId="wid_1561974481_k2413s8vl" align="left" top="small" right="small" left="small" />
@@ -533,8 +539,41 @@ const Home = () => {
                                     </WidgetRowColumn>
                                 </WidgetRow>
                             </WidgetContainer>
-                        </WidgetRowColumn>
-
+                    </WidgetRowColumn>
+                    <WidgetRowColumn classes="col-sm-6" top="medium" right="large" dataSpacing="maaa">
+                            <WidgetContainer containerContentId="5d19d6d19" dataBgPosition="top">
+                                <WidgetRow
+                                    styles={{ backgroundImage: `url(${HomeTeamBg})`,
+                                      backgroundPosition: 'left top',
+                                      backgroundRepeat: 'no-repeat',
+                                      backgroundSize: 'contain' }}
+                                    dataBgImage="/src/assets/images/cwc-doctor-home-team-bg.png">
+                                    <WidgetRowColumn classes="col-sm-12">
+                                        <WidgetRow
+                                            dataBgPosition="right bottom"
+                                            styles={{ backgroundImage: `url(${HomeTeam1})`,
+                                            backgroundPosition: 'right bottom',
+                                            backgroundRepeat: 'no-repeat',
+                                            backgroundSize: 'contain' }}
+                                            dataBgImage="/src/assets/images/cwc-doctor-home-team1.png">
+                                                <WidgetRowColumn classes="col-sm-12">
+                                                    <WidgetSpacer data_widget_id="wid_1561974481_dqzejk30e" top="small" bottom="small" dataSpacing="sasa"  />
+                                                    <WidgetText right="small" left="small" dataSpacing="asas">
+                                                        <h3 className="moto-text_204">
+                                                            Mme. Sharon Laura
+                                                        </h3>
+                                                        <p className="moto-text_normal">
+                                                            <span className="moto-color5_5">Infirmière</span>
+                                                        </p>
+                                                    </WidgetText>
+                                                    <WidgetSocialLinksExtended id="wid_1561974481_k2413s8vl" dataWidgetId="wid_1561974481_k2413s8vl" align="left" top="small" right="small" left="small" />
+                                                    <WidgetSpacer data_widget_id="wid_1561974481_w1978e0fh" top="large" dataSpacing="laaa" spacerHeight="0px" />
+                                                </WidgetRowColumn>
+                                        </WidgetRow>
+                                    </WidgetRowColumn>
+                                </WidgetRow>
+                            </WidgetContainer>
+                    </WidgetRowColumn>
                 </WidgetRow>
             </WidgetRowColumn>
 
@@ -543,7 +582,7 @@ const Home = () => {
         <WidgetRow classes="row-fixed"
             top="large"
             dataSpacing="laaa"
-            anchorName="services">
+            anchorName="speciality">
             <WidgetRowColumn classes="col-sm-12">
                 <WidgetText dataSpacing="aaaa">
                     <h2
@@ -734,7 +773,7 @@ const Home = () => {
                     >
                         <WidgetRowColumn classes="col-sm-12">
                             <WidgetRow bottom="medium" dataSpacing="aama">
-                                <WidgetRowColumn classes="col-sm-4">
+                                <WidgetRowColumn classes="col-sm-6">
                                     <WidgetText top="medium" bottom="small" dataSpacing="masa">
                                         <h3 className="moto-text_204">
                                             Horaires d'Ouverture
@@ -813,7 +852,7 @@ const Home = () => {
                                     
                                 </WidgetRowColumn>
 
-                                <WidgetRowColumn classes="col-sm-4">
+                                <WidgetRowColumn classes="col-sm-6">
                                     <WidgetText top="medium" bottom="small" dataSpacing="masa">
                                         <h3 className="moto-text_204">
                                             Horaires des médecins
@@ -840,7 +879,7 @@ const Home = () => {
                                     </WidgetButton>
                                 </WidgetRowColumn>
 
-                                <WidgetRowColumn classes="col-sm-4">
+                                {/* <WidgetRowColumn classes="col-sm-4">
                                     <WidgetText top="medium" bottom="small" dataSpacing="masa">
                                         <h3 className="moto-text_204">
                                             En Cas d'Urgence
@@ -868,7 +907,7 @@ const Home = () => {
                                             </span>
                                         </p>
                                     </WidgetText>
-                                </WidgetRowColumn>
+                                </WidgetRowColumn> */}
                             </WidgetRow>
                         </WidgetRowColumn>
                     </WidgetRow>
@@ -884,8 +923,18 @@ const Home = () => {
     </WidgetBlock>
 
     <BackToTopButton />
-    <WidgetCallback />
-  </MainLayout>;
+    <WidgetCallback teamMemberName="Dr Hervé" role="Médecin Généraliste Diplômé" phone="+261 34 01 322 13" />
+    
+
+    {/* <div style={{ height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'absolute', top: 0, left: 0, zIndex: 10, background: 'red' }}>     */}
+        {/* <WidgetCallback teamMemberName="Dr Hervé" role="Médecin Généraliste Diplômé" phone="+261 34 01 322 13" />
+        <WidgetCallback teamMemberName="Dr Karen" role="Médecin Généraliste " phone="+261 34 01 322 13" /> */}
+    {/* </div> */}
+
+    </MainLayout>;
+    
+  </>
+    
 };
 
 export default Home;

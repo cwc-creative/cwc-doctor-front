@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const WidgetCallback = () => {
+const WidgetCallback = ({ teamMemberName, role, phone }) => {
 
   const [open, setOpen] = useState(false);
   const [moreDetails, setMoreDetails] = useState(false);
@@ -34,14 +34,14 @@ const WidgetCallback = () => {
           </div>
           <div className="moto-widget-callback__description moto-widget-text">
             <p className="moto-text_system_8" style={{ textAlign: 'center' }}>
-              Dr Hervé
+              {teamMemberName}
             </p>
             <p className="moto-text_system_10" style={{ textAlign: 'center' }}>
-              <span className="moto-color2_3">Médecin Généraliste Diplômé</span>
+              <span className="moto-color2_3">{role}</span>
             </p>
             <p className="moto-text_normal" style={{ textAlign: 'center' }}>
-              <a className="moto-link" data-action="call" href="tel:+261 34 01 322 13"
-                ><span className="fa"></span> +261 34 01 322 13</a
+              <a className="moto-link" data-action="call" href={`tel:${phone}`}
+                ><span className="fa"></span> {phone}</a
               >
             </p>
           </div>

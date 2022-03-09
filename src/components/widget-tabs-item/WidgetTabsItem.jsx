@@ -47,10 +47,10 @@ const WidgetTabsItem = ({id, dataParentId}) => {
                         </WidgetImage>
                     </WidgetRowColumn>
 
-                    <WidgetRowColumn dataWidgetId="wid_1561974481_i895g7s0y" classes="col-sm-6" top="medium" bottom="medium" dataSpacing="mama" styles={{ backgroundPosition: 'left top' }}>
+                    <WidgetRowColumn dataWidgetId="wid_1561974481_i895g7s0y" classes="col-sm-6" top="small" bottom="medium" dataSpacing="mama" styles={{ backgroundPosition: 'left top' }}>
                             <WidgetText dataWidgetId="wid_1561974481_z0ndxnj42" dataSpacing="asas" right="small" left="small">
                                 <h3 className="moto-text_system_8">
-                                    Médecins Certifiés &amp; De La Technologie Moderne
+                                    Dialyse
                                 </h3>
                                 <p className="moto-text_normal">
                                     &nbsp;
