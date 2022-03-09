@@ -35,7 +35,7 @@ const NavUp = () => {
                                           href="tel:123456789"
                                           data-action="call"
                                           className="moto-link"
-                                          >+261 34 01 322 13</a>
+                                          >+261 34 40 589 40</a>
                                       </p>
                                   </WidgetText>
                                 </WidgetRowColumn>

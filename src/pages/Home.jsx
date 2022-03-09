@@ -87,13 +87,12 @@ const Home = () => {
                                     <WidgetText>
                                         <p className="moto-text_system_9">
                                             Vous pouvez facilement nous
-                                            joindre 24h/24 et 7j/7 via les numéros de
-                                            téléphone ci-dessous : <br />
-                                            <ul>
+                                            joindre 24h/24 et 7j/7.<br />
+                                            {/* <ul>
                                                 <li><a href="tel:+261344058940">034 40 589 40</a></li>
                                                 <li><a href="tel:+261344158941">034 41 589 41</a></li>
                                                 <li><a href="tel:+261344258942">034 42 589 42</a></li>
-                                            </ul>
+                                            </ul> */}
                                         </p>
                                     </WidgetText>
                                     {/* <WidgetButton dataWidgetId="wid_1561715188_oqimtrg36" preset="2" top="medium">
@@ -923,7 +922,7 @@ const Home = () => {
     </WidgetBlock>
 
     <BackToTopButton />
-    <WidgetCallback teamMemberName="Dr Hervé" role="Médecin Généraliste Diplômé" phone="+261 34 01 322 13" />
+    <WidgetCallback phone1="+261 34 40 589 40" phone2="+261 34 41 589 41" phone3="+261 34 42 589 42" />
     
 
     {/* <div style={{ height: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'absolute', top: 0, left: 0, zIndex: 10, background: 'red' }}>     */}

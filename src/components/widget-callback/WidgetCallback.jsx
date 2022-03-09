@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const WidgetCallback = ({ teamMemberName, role, phone }) => {
+const WidgetCallback = ({ phone1, phone2, phone3 }) => {
 
   const [open, setOpen] = useState(false);
   const [moreDetails, setMoreDetails] = useState(false);
@@ -33,15 +33,25 @@ const WidgetCallback = ({ teamMemberName, role, phone }) => {
             ></div>
           </div>
           <div className="moto-widget-callback__description moto-widget-text">
-            <p className="moto-text_system_8" style={{ textAlign: 'center' }}>
+            {/* <p className="moto-text_system_8" style={{ textAlign: 'center' }}>
               {teamMemberName}
-            </p>
-            <p className="moto-text_system_10" style={{ textAlign: 'center' }}>
+            </p> */}
+            {/* <p className="moto-text_system_10" style={{ textAlign: 'center' }}>
               <span className="moto-color2_3">{role}</span>
+            </p> */}
+            <p className="moto-text_normal" style={{ textAlign: 'center' }}>
+              <a className="moto-link" data-action="call" href={`tel:${phone1}`}
+                ><span className="fa"></span> {phone1}</a
+              >
             </p>
             <p className="moto-text_normal" style={{ textAlign: 'center' }}>
-              <a className="moto-link" data-action="call" href={`tel:${phone}`}
-                ><span className="fa"></span> {phone}</a
+              <a className="moto-link" data-action="call" href={`tel:${phone2}`}
+                ><span className="fa"></span> {phone2}</a
+              >
+            </p>
+            <p className="moto-text_normal" style={{ textAlign: 'center' }}>
+              <a className="moto-link" data-action="call" href={`tel:${phone3}`}
+                ><span className="fa"></span> {phone3}</a
               >
             </p>
           </div>
