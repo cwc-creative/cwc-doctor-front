@@ -7,8 +7,6 @@ import WidgetRowColumn from '../components/widget-row__column/WidgetRowColumn';
 import WidgetSpacer from '../components/widget-spacer/WidgetSpacer';
 import MainLayout from '../layouts/main_layout';
 
-
-import HomeAppointment from '../assets/images/home-appointment.png';
 import HomeAppointmentBg1 from '../assets/images/home-appointment-bg1.png';
 import HomeDoctor from '../assets/images/home-doctor.jpg';
 import HomeDivider from '../assets/images/home-divider.png';
@@ -24,6 +22,7 @@ import About from '../components/About';
 import Header from '../components/header/Header';
 import Services from '../components/services/Services';
 import Speciality from '../components/speciality/Speciality';
+import Appointment from '../components/appointment/Appointment';
 
 const Home = () => {
   return <>
@@ -37,66 +36,7 @@ const Home = () => {
 
     <Speciality />
 
-    <WidgetBlock top="large" dataSpacing="laaa" anchorName="appointment">
-        <WidgetRow classes="row-fixed"
-        >
-            <WidgetRowColumn classes="col-sm-2"></WidgetRowColumn>
-            <WidgetRowColumn classes="col-sm-8">
-                <WidgetContainer containerContentId="5d15efcc7" dataBgPosition="top">
-                    <WidgetRow
-                        styles={{
-                              backgroundImage: `url(${HomeAppointment})`,
-                              backgroundPosition: 'left top',
-                              backgroundRepeat: 'no-repeat',
-                              backgroundSize: 'contain'
-                            }}
-                        dataBgImage="/src/assets/images/home-appointment.png"
-                    >
-                        <WidgetRowColumn classes="col-sm-12">
-                            <WidgetSpacer data_widget_id="wid_1561718845_n31gwv7vj" top="medium" dataSpacing="maaa" />
-                            <WidgetText dataSpacing="aaaa">
-                                <h2
-                                    style={{ textAlign: 'center' }}
-                                    className="moto-text_system_7"
-                                >
-                                    Prendre un rendez-vous
-                                </h2>
-                            </WidgetText>
-                            <WidgetImage data_widget_id="wid_1561718856_ssr56aj7l" align="center" top="small" bottom="small">
-                                <span className="moto-widget-image-link">
-                                    <img
-                                        data-src="/src/assets/images/home-divider.png"
-                                        className="moto-widget-image-picture lazyloaded"
-                                        data-id="145"
-                                        title=""
-                                        alt=""
-                                        src={HomeDivider}
-                                    />
-                                </span>
-                            </WidgetImage>
-                            <WidgetRow top="small"
-                                dataSpacing="saaa"
-                            >
-                                <WidgetRowColumn classes="col-sm-1"></WidgetRowColumn>
-                                <WidgetRowColumn classes="col-sm-10" styles={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                    {/* Calendly Integration */}
-                                        <InlineWidget 
-                                            url="https://calendly.com/doctorrdv/rendez-vous" 
-                                            pageSettings={{ 
-                                                hideEventTypeDetails: true,
-                                                hideLandingPageDetails: true }}
-                                            styles={{width: '80%', height: '300px'}} />
-                                </WidgetRowColumn>
-                                <WidgetRowColumn classes="col-sm-1"></WidgetRowColumn>
-                            </WidgetRow>
-                            <WidgetSpacer data_widget_id="wid_1561718885_jzbzckawy" top="medium" dataSpacing="maaa" />
-                        </WidgetRowColumn>
-                    </WidgetRow>
-                </WidgetContainer>
-            </WidgetRowColumn>
-            <WidgetRowColumn classes="col-sm-2"></WidgetRowColumn>
-        </WidgetRow>
-    </WidgetBlock>
+    <Appointment />
 
     <WidgetBlock top="large" dataSpacing="laaa" anchorName="f.a.q">
         <WidgetRow classes="row-fixed moto-justify-content_center">
