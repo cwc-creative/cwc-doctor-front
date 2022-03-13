@@ -131,35 +131,6 @@ const Contact = () => {
                                     </WidgetButton>
                                 </WidgetRowColumn>
 
-                                {/* <WidgetRowColumn classes="col-sm-4">
-                                    <WidgetText top="medium" bottom="small" dataSpacing="masa">
-                                        <h3 className="moto-text_204">
-                                            En Cas d'Urgence
-                                        </h3>
-                                    </WidgetText>
-                                    <WidgetText top="small" dataSpacing="saaa">
-                                        <p className="moto-text_216">
-                                            <span className="moto-color1_3">
-                                                <span className="fa fa-fw"></span>
-                                            </span>&nbsp;
-                                            <a
-                                                href="tel:0340132213"
-                                                data-action="call"
-                                                className="moto-link"
-                                                >
-                                                (+261) 34 01 322 13
-                                            </a>
-                                        </p>
-                                    </WidgetText>
-                                    <WidgetText top="small" dataSpacing="saaa">
-                                        <p className="moto-text_normal">
-                                            <span className="moto-color5_5">
-                                                Votre plan de traitement est conçu pour des progrès constants, chaque phase étant mise en œuvre.
-                                                Borem ipsum dolor sit amet, conse ctetur adipper isicing.
-                                            </span>
-                                        </p>
-                                    </WidgetText>
-                                </WidgetRowColumn> */}
                             </WidgetRow>
                         </WidgetRowColumn>
                     </WidgetRow>
