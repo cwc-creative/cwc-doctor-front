@@ -34,7 +34,7 @@ import WidgetButton from '../components/widget-button/WidgetButton';
 import WidgetAccordion from '../components/widget-accordion/WidgetAccordion';
 import WidgetAccordionItem from '../components/widget-accordion-item/WidgetAccordionItem';
 import WidgetDivider from '../components/widget-divider/WidgetDivider';
-import About from '../components/About';
+import About from '../components/about/About';
 
 const Home = () => {
   return <>
