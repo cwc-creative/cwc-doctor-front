@@ -1,12 +1,12 @@
 import React from 'react'
-import WidgetBlock from './widget-block/WidgetBlock'
-import WidgetImage from './widget-image/WidgetImage'
-import WidgetRow from './widget-row/WidgetRow'
-import WidgetRowColumn from './widget-row__column/WidgetRowColumn'
-import WidgetText from './widget-text/WidgetText'
+import WidgetBlock from '../widget-block/WidgetBlock'
+import WidgetImage from '../widget-image/WidgetImage'
+import WidgetRow from '../widget-row/WidgetRow'
+import WidgetRowColumn from '../widget-row__column/WidgetRowColumn'
+import WidgetText from '../widget-text/WidgetText'
 
-import HomeAbout from '../assets/images/home-about.jpg';
-import HomeDivider from '../assets/images/home-divider.png';
+import HomeAbout from '../../assets/images/home-about.jpg';
+import HomeDivider from '../../assets/images/home-divider.png';
 
 const About = () => {
   return (

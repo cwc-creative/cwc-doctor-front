@@ -5,13 +5,13 @@ import MainLayout from '../layouts/main_layout';
 
 import BackToTopButton from '../components/back-to-top-button/BackToTopButton';
 import WidgetCallback from '../components/widget-callback/WidgetCallback';
-import About from '../components/About';
 import Header from '../components/header/Header';
 import Services from '../components/services/Services';
 import Speciality from '../components/speciality/Speciality';
 import Appointment from '../components/appointment/Appointment';
 import FAQ from '../components/faq/FAQ';
 import Contact from '../components/contact/Contact';
+import About from '../components/about/About';
 
 const Home = () => {
   return <MainLayout>
