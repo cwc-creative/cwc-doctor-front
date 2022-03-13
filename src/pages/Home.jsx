@@ -1,6 +1,4 @@
 import React from 'react';
-import WidgetBlock from '../components/widget-block/WidgetBlock';
-import WidgetRow from '../components/widget-row/WidgetRow';
 import MainLayout from '../layouts/main_layout';
 
 import BackToTopButton from '../components/back-to-top-button/BackToTopButton';
@@ -30,11 +28,11 @@ const Home = () => {
 
     <Contact />
 
-    <WidgetBlock extraClass="moto-bg-color3_3">
+    {/* <WidgetBlock extraClass="moto-bg-color3_3">
         <WidgetRow>
 
         </WidgetRow>
-    </WidgetBlock>
+    </WidgetBlock> */}
 
     <BackToTopButton />
 
